@@ -1,1 +1,6 @@
 # AI-number-prediction
+
+
+- [] Deploy 
+
+
