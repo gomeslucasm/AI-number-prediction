@@ -103,7 +103,8 @@
         async function Save(){
             var canvas = document.getElementById('myCanvas');
             var dataURL = canvas.toDataURL();
-
+            var url = window.location.origin
+            url = url + '/teste/'
             console.log(dataURL);
 
             const response = await fetch('http://127.0.0.1:5000/teste/',
