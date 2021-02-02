@@ -2,8 +2,6 @@
 
 Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos a mão. A aplicação está hospedada no Heroku.
 
-- https://ai-number-identification.herokuapp.com/
-
 <div>
   <a href = 'https://flask.palletsprojects.com/en/1.1.x/'> 
     <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
@@ -13,8 +11,12 @@ Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos
   </a>
 <div>
 
+- https://ai-number-identification.herokuapp.com/
+
 <p align="center">
+  <a href = 'https://ai-number-identification.herokuapp.com/'>
   <img width="460" height="300" src="https://github.com/gomeslucasm/AI-number-prediction/blob/master/site.gif">
+  </a>
 </p>
 
 
