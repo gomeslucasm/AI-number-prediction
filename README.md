@@ -1,6 +1,6 @@
 # AI-number-prediction
 
-Deploy de uma aplicação de IA em Flask, que identifica dígitos de 0-9 escritos a mão.
+Deploy de uma aplicação de IA em Flask <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>, que identifica dígitos de 0-9 escritos a mão.
 
 ## Rede neural
 
