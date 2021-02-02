@@ -107,7 +107,7 @@
             url = url + '/teste/'
             console.log(dataURL);
 
-            const response = await fetch('http://127.0.0.1:5000/teste/',
+            const response = await fetch(url,
             {
                 method:'POST',
                 body:JSON.stringify({imageBase64: dataURL}),
