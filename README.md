@@ -2,7 +2,7 @@
 
 Deploy de uma aplicação de IA em Flask , que identifica dígitos de 0-9 escritos a mão. A aplicação está hospedada no Heroku.
 
-<img alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/
+<img alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
 <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
 
 ## Rede neural
