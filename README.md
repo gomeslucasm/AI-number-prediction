@@ -23,4 +23,4 @@ os dígitos escritos a mão. Para treinamento e validação, é utilizado a base
 
 ## To-do
 
-- [] Treinamento e deploy de uma rede convolucional para comparação.
+- [ ] Treinamento e deploy de uma rede convolucional para comparação.
