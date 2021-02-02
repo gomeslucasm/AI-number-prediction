@@ -15,7 +15,7 @@ Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos
 
 <p align="center">
   <a href = 'https://ai-number-identification.herokuapp.com/' target="_blank">
-  <img width="460" height="300" src="https://github.com/gomeslucasm/AI-number-prediction/blob/master/site.gif">
+  <img width="460" height="300" src="https://github.com/gomeslucasm/AI-number-prediction/blob/master/site_img.gif">
   </a>
 </p>
 
