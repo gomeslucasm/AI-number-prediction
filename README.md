@@ -20,3 +20,7 @@ os dígitos escritos a mão. Para treinamento e validação, é utilizado a base
 <p align="center">
   <img width="100" height="100" src="https://user-images.githubusercontent.com/44169749/96166004-c7641980-0ef3-11eb-93ec-8cfa12578646.PNG">
 </p>
+
+## To-do
+
+- [] Treinamento e deploy de uma rede convolucional para comparação.
