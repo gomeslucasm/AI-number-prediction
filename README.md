@@ -7,6 +7,8 @@ Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos
 <img alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
 <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
 
+![Alt Text](https://github.com/gomeslucasm/AI-number-prediction/blob/master/site.gif)
+
 ## Rede neural
 
 Rede neural artificial estilo perceptron, utilizando o algoritmo de backpropagation para identificar
