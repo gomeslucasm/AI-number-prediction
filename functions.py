@@ -11,7 +11,10 @@ def predict_number(model,weights,data):
     # Loading weights
     model.load_weights(weights)
     # Loading images
-    img = Image.open(data)
+    if type(data) is str:
+        img = Image.open(data)
+    else:
+        img = data
     # Resizing image to the same shape of the images dataset used in the traning model
     img = img.resize((28,28),Image.ANTIALIAS)
     # Convert PIL image to numpy array
@@ -24,5 +27,17 @@ def predict_number(model,weights,data):
     predict = model.predict(img)
     # Getting tha max value in the predict arrays
     number_prediction = predict.argmax()
-    
-    return number_prediction
+    number_prediction_percent = predict.max()
+    print('---------------------------')
+    print('Predição = ', number_prediction, ' Porcentagem = ', predict.max())
+    print('---------------------------')
+    print(predict)
+    print('---------------------------')
+    if number_prediction_percent > 0.6:
+        return number_prediction
+    else:
+        return False
+
+#test = predict_number('neuralnetwork_model.json','model_weights.h5','download.png')
+
+#print('resposta',test)

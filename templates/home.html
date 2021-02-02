@@ -10,28 +10,41 @@
 <body onload="InitThis();">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+   
+    <!-- Corpo -->
     <div style = "display: flex; flex-direction:column; align-items:center;">
 
+        <!-- Canvas para desenhar  -->
         <canvas id="myCanvas" width="200" height="200" style="border:2px solid black"
         lineWidth = 2>
         </canvas>
-
-        <button onclick="javascript:clearArea();return false;" 
-        style = 'margin:10px;'>Clear</button>
-
-        <button onclick = "javascript:Save();return false;" id = 'salvar' 
-        style = 'margin:10px;'>Salvar imagem</button>
-
+        
+        <!-- Imagem -->
         <img src = '' id = 'img' style = 'display:none'
         width="200" height="200" background-color="black" />
 
+        <!-- Botão de limpeza do canvas de desenho-->
+        <button onclick="javascript:clearArea();return false;" 
+        style = 'margin:10px;'>Clear</button>
+
+        <!--  Botão para "salvar a imagem" -->
+        <button onclick = "javascript:Save();return false;" id = 'salvar' 
+        style = 'margin:10px;'>Salvar imagem</button>
+
+
+        <p style = "display:none" id = 'teste'>teste</p>
+
     </div>
-    <script >
+   
+   
+   <!-- JS scripts -->
+   <script >
         var ShowPredict = null;
         var mousePressed = false;
         var lastX, lastY;
         var ctx;
 
+        /* Função que inciia o canvas */
         function InitThis() {
             canvas = document.getElementById('myCanvas');
             ctx = document.getElementById('myCanvas').getContext("2d");
@@ -59,6 +72,7 @@
             });
         }
 
+        /* Função que desenha no canvas */
         function Draw(x, y, isDown) {
             if (isDown) {
                 ctx.beginPath();
@@ -72,7 +86,8 @@
             }
             lastX = x; lastY = y;
         }
-            
+    
+        /* Função que limpa o canvas */
         function clearArea() {
             // Use the identity matrix while clearing the canvas
             ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -81,16 +96,36 @@
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.lineWidth = 7;
             ctx.strokeStyle = 'white'
+
         }
-        function Save(){
+
+        /* Função que salva o canvas */
+        async function Save(){
             var canvas = document.getElementById('myCanvas');
             var dataURL = canvas.toDataURL();
-            var img = document.getElementById('img')
-            var img_input = document.getElementById('img_input');
-            img.style.display = ''
-            img.src = dataURL;
+
             console.log(dataURL);
+
+            const response = await fetch('http://127.0.0.1:5000/teste/',
+            {
+                method:'POST',
+                body:JSON.stringify({imageBase64: dataURL}),
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            }).then(response=>
+                response.json().then(data=>({
+                    data:data
+                }))
+            )
+            console.log('response',response)
+            
+            x = document.getElementById('teste')
+            x.innerHTML = String(response['data']['predict']);
+            x.style.display = 'block'
         }
+
+
     </script>
 
 </body>
