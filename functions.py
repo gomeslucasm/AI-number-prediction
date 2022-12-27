@@ -28,16 +28,7 @@ def predict_number(model,weights,data):
     # Getting tha max value in the predict arrays
     number_prediction = predict.argmax()
     number_prediction_percent = predict.max()
-    print('---------------------------')
-    print('Predição = ', number_prediction, ' Porcentagem = ', predict.max())
-    print('---------------------------')
-    print(predict)
-    print('---------------------------')
     if number_prediction_percent > 0.6:
         return number_prediction
     else:
         return False
-
-#test = predict_number('neuralnetwork_model.json','model_weights.h5','download.png')
-
-#print('resposta',test)

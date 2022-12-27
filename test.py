@@ -1,1 +1,0 @@
-from functions import predict_number 
