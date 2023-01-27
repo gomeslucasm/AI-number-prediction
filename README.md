@@ -9,7 +9,7 @@ Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos
   <a href = 'https://render.com/' target="_blank"> 
     <img alt="Heroku" src="https://dashboard.render.com/static/media/logo-redesign-02-word-dark.0811da26fe4b1f9a9b6c642d91bbcf73.svg"/>
   </a>
-<div>
+</div>
 
 - https://number-prediction.gomeslucas.dev/
 
