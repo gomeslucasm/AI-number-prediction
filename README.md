@@ -2,7 +2,7 @@
 
 Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos a mão. A aplicação está hospedada no Heroku.
 
-<div style='display: flex; column-gap: 1rem;' >
+<div style="display: flex; column-gap: 1rem;" >
   <a href = 'https://flask.palletsprojects.com/en/1.1.x/' target="_blank"> 
     <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
   </a>
