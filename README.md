@@ -6,8 +6,11 @@ Deploy de uma aplicação de IA em Flask que identifica dígitos de 0-9 escritos
   <a href = 'https://flask.palletsprojects.com/en/1.1.x/' target="_blank"> 
     <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
   </a>
-  <a href = 'https://render.com/' target="_blank"> 
-    <img alt="Heroku" src="https://dashboard.render.com/static/media/logo-redesign-02-word-dark.0811da26fe4b1f9a9b6c642d91bbcf73.svg"/>
+</div>
+
+<div>
+   <a href = 'https://render.com/' target="_blank"> 
+    <img alt="Render" src="https://dashboard.render.com/static/media/logo-redesign-02-word-dark.0811da26fe4b1f9a9b6c642d91bbcf73.svg"/>
   </a>
 </div>
 
